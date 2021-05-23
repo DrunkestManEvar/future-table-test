@@ -111,7 +111,7 @@ const peopleSlice = createSlice({
     addPerson: {
       reducer(state, action) {
         const addedPerson = action.payload;
-        state.peopleData.push(addedPerson);
+        state.peopleData.unshift(addedPerson);
       },
       prepare(formData) {
         const { firstName, lastName, email, phone: enteredPhone } = formData;
