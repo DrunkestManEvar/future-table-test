@@ -1,0 +1,83 @@
+.pagination-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba($main-violet, 0.7);
+  border-radius: 50%;
+  color: #eee;
+  width: 6rem;
+  height: 6rem;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: 1px 0.5rem 1rem #222;
+    transform: translateY(-3px);
+    animation: pulsate 2s infinite;
+    background-color: $main-violet;
+  }
+}
+
+.form__submit-btn {
+  position: relative;
+  background-color: $main-violet;
+  padding: 1rem 2rem;
+  color: #eee;
+  transition: border-radius 0.3s ease-in-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: rgba($main-violet, 0.5);
+    border-radius: 5rem;
+    opacity: 0;
+  }
+
+  &:hover {
+    border-radius: 5rem;
+
+    &::before {
+      animation: blink-and-enlarge 0.7s forwards;
+    }
+  }
+
+  &:disabled {
+    background-color: #ccc;
+
+    &:hover {
+      border-radius: 0;
+
+      &::before {
+        animation: none;
+      }
+    }
+  }
+}
+
+.regular-button {
+  background-color: $main-violet;
+  color: #eee;
+  padding: 1rem 2rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.modal__button {
+  background-color: #000;
+  color: #eee;
+  padding: 1rem 2rem;
+}
+
+.modal--error__button {
+  background-color: $main-red;
+}
+
+.center-btn {
+  grid-column: 2 / 3;
+}

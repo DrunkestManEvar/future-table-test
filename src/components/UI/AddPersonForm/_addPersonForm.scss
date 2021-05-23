@@ -1,0 +1,19 @@
+.add-person-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0.5rem;
+  column-gap: 1rem;
+  padding: 1rem 0;
+
+  div {
+    display: flex;
+
+    label {
+      width: 10rem;
+    }
+
+    input {
+      flex: 1;
+    }
+  }
+}

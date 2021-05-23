@@ -1,0 +1,17 @@
+.table__heading {
+  position: relative;
+  border: solid 1px $main-violet;
+  padding: 0 4rem;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  height: 6rem;
+  text-transform: capitalize;
+
+  &--sorted {
+    background-color: #ddd;
+  }
+
+  &:hover {
+    background-color: #dddddd;
+  }
+}

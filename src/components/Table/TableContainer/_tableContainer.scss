@@ -1,0 +1,12 @@
+.table-container {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem 0;
+
+  table {
+    border-collapse: collapse;
+    position: relative;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  background-color: $main-grey;
+  color: #222;
+}
+
+.select-format-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+  }
+}

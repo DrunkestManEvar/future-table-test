@@ -1,0 +1,21 @@
+.search-form {
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  z-index: 3;
+  box-shadow: 0 0.1rem 0.5rem #222;
+  overflow: hidden;
+
+  &__input--text {
+    padding: 1rem 2rem;
+    flex: 1;
+  }
+
+  > *:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}

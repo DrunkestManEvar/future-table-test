@@ -1,0 +1,10 @@
+.table-data-cell {
+  padding: 1rem 2rem;
+  border: solid 1px $main-violet;
+
+  &--center {
+    padding-left: 0;
+    text-align: center;
+    border: solid 1px $main-violet;
+  }
+}

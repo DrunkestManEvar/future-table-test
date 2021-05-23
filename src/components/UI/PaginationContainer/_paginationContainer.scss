@@ -1,0 +1,16 @@
+.pagination-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  transform: translateY(-50%);
+
+  &--first-page {
+    justify-content: flex-end;
+  }
+}

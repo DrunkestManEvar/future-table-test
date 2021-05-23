@@ -1,0 +1,53 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+  text-align: center;
+
+  &__sign {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: $main-violet;
+    transform: scale(1.5);
+  }
+
+  & > * {
+    margin-bottom: 1rem;
+  }
+
+  .data-format-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    &__heading {
+      grid-column: -1 / 1;
+    }
+
+    &__option {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 3rem;
+      border: solid 1px $main-violet;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $main-violet;
+        color: #eee;
+      }
+    }
+  }
+}
+
+.modal--error {
+  &__sign {
+    color: $main-red;
+  }
+}
